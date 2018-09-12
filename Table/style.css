@@ -49,7 +49,6 @@ q:before, q:after {
 
 table {
     border-collapse: collapse;
-
 }
 
 .main {
@@ -69,27 +68,18 @@ table {
 
 .table {
     width: 100%;
-
 }
 
-.head-table {
+.table tr:nth-child(even) {
+    background-color: #EEEEEE;
+}
+
+.table tr:nth-child(1) {
     background-color: #3498db;
     color: #ffffff;
 }
 
-.even {
-    background-color: #EEEEEE;
-}
-
-.not-even {
-    background-color: #FFFFFF;
-}
-
-.body-table {
-    line-height: 222%;
-}
-
-table tr td {
+.table tr td {
     border: 1px solid #CCCCCC;
     padding-left: 10px;
 }
