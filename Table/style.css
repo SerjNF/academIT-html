@@ -70,11 +70,11 @@ table {
     width: 100%;
 }
 
-.table tr:nth-child(even) {
+.body-table tr:nth-child(odd) {
     background-color: #EEEEEE;
 }
 
-.table tr:nth-child(1) {
+.head-table {
     background-color: #3498db;
     color: #ffffff;
 }
