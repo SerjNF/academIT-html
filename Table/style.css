@@ -79,7 +79,8 @@ table {
     color: #ffffff;
 }
 
-.table tr td {
+.body-table tr td, .head-table tr th {
+    text-align: -webkit-left;
     border: 1px solid #CCCCCC;
     padding-left: 10px;
 }
