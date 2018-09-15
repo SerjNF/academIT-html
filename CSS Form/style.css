@@ -87,6 +87,7 @@ label.label-textField {
 }
 
 label.text-down {
+    font-size: 14px;
     color: #737373;
 }
 
@@ -103,10 +104,14 @@ textarea.textArea {
     width: 690px;
     height: 32px;
     line-height: 20px;
+    border: none;
+}
+
+.text-in-field:focus {
+    outline: none;
 }
 
 button.button-sub {
-
     margin: 5px;
     border: black;
     font-weight: bold;
@@ -116,6 +121,11 @@ button.button-sub {
     font-size: 14px;
     Color: #FFFFFF;
     line-height: 20px;
+}
+
+button.button-sub:hover{
+    background-color: #0d76db;
+    cursor: pointer;
 }
 
 .for-button {
