@@ -80,7 +80,7 @@ table {
 }
 
 .body-table tr td, .head-table tr th {
-    text-align: -webkit-left;
+    text-align: left;
     border: 1px solid #CCCCCC;
     padding-left: 10px;
 }

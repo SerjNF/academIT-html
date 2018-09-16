@@ -7,27 +7,30 @@
 </head>
 <body>
 <div class="for-form">
-    <label class="head-label text">Отправить заявку</label>
+    <h1 class="name-form text">Отправить заявку</h1>
     <form class="form" action="CSSForm.html" method="post">
-        <label class="label-textField">Ваше имя
-            <p>
+        <div>
+            <label class="label-textField">Ваше имя
                 <input class=" text-in-field" type="text" name="name" placeholder="Ваше имя*">
-            </p>
-        </label>
-        <label class="label-textField">Ваш номер телефона
-            <p>
+            </label>
+        </div>
+        <div>
+            <label class="label-textField">Ваш номер телефона
                 <input class=" text-in-field" type="text" name="phone" placeholder="Ваш номер телефона*">
-            </p>
-        </label>
-        <label class="label-textField">Ваше email или VK
-            <p>
+            </label>
+        </div>
+        <div>
+            <label class="label-textField">Ваше email или VK
                 <input class=" text-in-field" type="text" name="email-VK" placeholder="Ваше email или VK*">
-            </p>
+            </label>
+        </div>
+        <label class="label-textField">Комментарий
+            <p><textarea class="textArea text text-in-field" name="comment"
+                         placeholder="Комментарий (не обязательно)"></textarea></p>
         </label>
-        <label class="label-textField">Коментарий
-            <p><textarea class="textArea text text-in-field" name="comment" placeholder="Комментарий (не обязательно)"></textarea></p>
-        </label>
-        <label class="text-down">Заполните и отправьте форму, и мы перезвоним Вам по указанному номеру</label>
+        <div class="for-text-down">
+            <label class="text-down">Заполните и отправьте форму, и мы перезвоним Вам по указанному номеру</label>
+        </div>
         <div class="for-button">
             <button class="button-sub text" type="submit">Отправить заявку</button>
         </div>
