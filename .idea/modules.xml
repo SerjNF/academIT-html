@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/CSS Form/CSS Form.iml" filepath="$PROJECT_DIR$/CSS Form/CSS Form.iml" />
       <module fileurl="file://$PROJECT_DIR$/MySite/MySite.iml" filepath="$PROJECT_DIR$/MySite/MySite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TODOList/TODOList.iml" filepath="$PROJECT_DIR$/TODOList/TODOList.iml" />
       <module fileurl="file://$PROJECT_DIR$/Table/Table.iml" filepath="$PROJECT_DIR$/Table/Table.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TemperatureConvert/TemperatureConvert.iml" filepath="$PROJECT_DIR$/TemperatureConvert/TemperatureConvert.iml" />
       <module fileurl="file://$PROJECT_DIR$/Text/Text.iml" filepath="$PROJECT_DIR$/Text/Text.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/academIT-html.iml" filepath="$PROJECT_DIR$/.idea/academIT-html.iml" />
     </modules>

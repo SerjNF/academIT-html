@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертер</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="main">
+    <h1 class="h1-head">Конвертер температуры</h1>
+    <form class="form">
+        <div class="text">
+            <label>Введите температуру в градусах Цельсия:</label>
+        </div>
+        <div class="input">
+            <input id="input-temp" type="number" name="temp-in-celsius" placeholder="Температура в цельсия">
+        </div>
+        <hr>
+        <div class="text">
+            <label>Выберете в какую шкалу перевести температуру:</label>
+        </div>
+        <div class="check-box">
+            <label for="celsius">
+                <input type="radio" name="scale" class="check-radio" id="celsius">Цельсия
+            </label>
+            <label for="kelvin">
+                <input type="radio" name="scale" class="check-radio" id="kelvin" >Кельвин
+            </label>
+            <label for="farengeit">
+                <input type="radio" name="scale" class="check-radio" id="farengeit">Фаренгейт
+            </label>
+            <div id="button">
+            <label>
+                <input type="button" value="Перевести" id="button-convert">
+                <!--<button type="submit" name="convert" class="button-convert" id="button-1">Перевести</button>-->
+            </label>
+        </div>
+        <hr>
+        </div>
+        <div class="text">
+            <label>Результат перевода:</label>
+        </div>
+        <div class="input">
+            <label for="result-temp"></label><input id="result-temp" type="text" name="result-temp" readonly placeholder="Результат перевода">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
