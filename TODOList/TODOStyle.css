@@ -116,20 +116,24 @@ h1 {
 #col1 {
     width: 6%;
 }
+
 #col2 {
     width: 27%;
 }
+
 #col3 {
     width: 27%;
 }
+
 #col4 {
     width: 26%;
 }
+
 #col5 {
     width: 13%;
 }
 
-.table-item{
+.table-item {
     width: 100%;
     table-layout: fixed;
 }
