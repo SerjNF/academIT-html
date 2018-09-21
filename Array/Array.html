@@ -6,47 +6,8 @@
 </head>
 <body>
 Все в консоли
-<script>
-    (function () {
-        let list = [3, 4, 6, 7, 32, 2, 4, 6, 3, 36, 78, 456, 12, 45];
-        console.log("array: " + list);
-        list.sort(function (a, b) {
-            return a - b;
-        });
-        console.log("sorted array: " + list);
+<script src="ArrayScript.js">
 
-        let firstFiveNumbers = list.slice(0, 5);
-        console.log("first 5 numbers array: " + firstFiveNumbers);
-
-        let lastFiveNumbers = list.slice(list.length - 5);
-        console.log("last 5 numbers array: " + lastFiveNumbers);
-
-        let sumEvenNumber = list.reduce(function (sum, currentValue) {
-            if (currentValue % 2 === 0) {
-                return sum + currentValue;
-            } else {
-                return sum;
-            }
-        }, 0);
-        console.log("sum all even numbers: " + sumEvenNumber);
-
-        let list1 = Object.create(Array.prototype);
-        for (let i = 1; i <= 100; i++) {
-            list1.push(i);
-        }
-        console.log("Array 100 numbers:" + list1);
-
-        let list2 = list1.filter(function (value) {
-            if (value % 2 === 0) {
-                return value;
-            }
-        }).map(function (value) {
-            return value * value;
-        });
-        console.log("Array square even numbers:" + list2);
-        console.log("length list2:" + list2.length);
-
-    })();
 </script>
 </body>
 </html>

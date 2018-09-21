@@ -1,42 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    var count = 0;
-    document.getElementById("enter-data").onclick = function () {
+    document.getElementById("enter-data").addEventListener("click", function () {
         var table = document.createElement("table");
         table.className = "table-item";
 
         var tBody = document.createElement("tbody");
-
+        var tr = document.createElement("tr");
         var fullName = document.getElementsByClassName("input");
-        var nameList  = Array.prototype.slice.call(fullName);
+        var itemLi = document.createElement("li");
+        itemLi.className = "item";
+
+        var nameList = Array.prototype.slice.call(fullName);
+
+        if (nameList.some(elem => {
+            return elem.value === "";
+        })) {
+            alert("Все поля должны быть заполнены");
+            return;
+        }
 
         nameList.forEach(function (elem) {
-                var cell = document.createElement("td");
-                cell.className = "list-item";
-                cell.innerText = elem.value;
-                tBody.appendChild(cell);
-                elem.value = "";
+            var cell = document.createElement("td");
+            cell.className = "list-item";
+            cell.innerText = elem.value;
+            tr.appendChild(cell);
+            elem.value = "";
         });
 
         var delButton = document.createElement("input");
         delButton.type = "button";
         delButton.value = "удалить";
-        delButton.onclick = function (c) {
-            return function () {
-                let buttonId = "item" + c;
-                document.getElementById(buttonId).remove();
-            };
-        }(count);
+        delButton.addEventListener("click", function () {
+            delButton.closest("li").remove();
+        });
 
-        tBody.appendChild(delButton);
+        tr.appendChild(delButton);
+        tBody.appendChild(tr);
         table.appendChild(tBody);
-
-        var itemLi = document.createElement("li");
-        itemLi.className = "item";
-        itemLi.setAttribute("id", "item" + count);
         itemLi.appendChild(table);
 
         document.getElementById("list").appendChild(itemLi);
-        count++;
-    };
+    });
 });
