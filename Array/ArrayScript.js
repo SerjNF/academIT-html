@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 0);
         console.log("sum all even numbers: " + sumEvenNumber);
 
-        var list1 = Object.create(Array.prototype);
-        for (let i = 1; i <= 100; i++) {
+        var list1 = [];
+        for (var i = 1; i <= 100; i++) {
             list1.push(i);
         }
         console.log("Array 100 numbers:" + list1);

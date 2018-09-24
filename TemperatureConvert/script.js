@@ -8,8 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("input-temp").value = 0;
         }
 
+        var resultTemp;
         if (document.getElementById("celsius").checked) {
-            var resultTemp = inputTemp;
+            resultTemp = inputTemp;
         } else if (document.getElementById("kelvin").checked) {
             resultTemp = Number(inputTemp) + 273.15;
         } else if (document.getElementById("fahrenheit").checked) {
