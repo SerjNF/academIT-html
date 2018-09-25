@@ -53,54 +53,37 @@ table {
 
 .input-data, .data {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #676565;
-    background: #feeed6;
+    color: #292727;
     width: 720px;
     margin: auto;
     padding: 10px;
 }
 
-.list {
+.body-table {
     box-sizing: border-box;
     width: 100%;
     padding: 0 20px;
     list-style-type: decimal;
 }
 
-.item {
-    padding: 10px 0 0 20px;
-}
-
-.list-item {
+tr, td, th {
+    border: 1px solid rgba(156, 152, 145, 0.15);
     max-width: 180px;
     overflow: hidden;
     text-overflow: ellipsis;
     box-sizing: border-box;
-    width: 30%;
-    padding: 0 2% 8px 0;
-}
 
-#head-list-soname, #head-list-name, #head-list-last-name {
-    padding-left: 5px;
-    padding-bottom: 20px;
-}
-
-.head-list {
-    width: 100%;
-    padding-bottom: 20px;
-}
-
-.head-list-item {
-    text-align: left;
 }
 
 .input {
-    width: 30%;
-    padding: 1%;
+    width: 32.3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .div-button {
     padding: 1%;
+    padding-right: 0;
 }
 
 #enter-data {
@@ -113,27 +96,32 @@ h1 {
     font-weight: 700;
 }
 
-#col1 {
+.firstCell, .col1 {
+    text-align: left;
+    padding: 6px;
     width: 6%;
 }
 
-#col2 {
+.col2 {
+    text-align: left;
+    padding: 6px;
     width: 27%;
 }
 
-#col3 {
+.col3 {
+    text-align: left;
+    padding: 6px;
     width: 27%;
 }
 
-#col4 {
+.col4 {
+    text-align: left;
+    padding: 6px;
     width: 26%;
 }
 
-#col5 {
+.col5 {
+    text-align: left;
+    padding: 6px;
     width: 13%;
-}
-
-.table-item {
-    width: 100%;
-    table-layout: fixed;
 }
