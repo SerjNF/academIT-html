@@ -48,7 +48,7 @@ $(function () {
                 elem.removeClass("error").addClass("ok");
                 statusInput[numberInStatus] = false;
                 return false;
-            } else if(elem.val().search(/^$/) !== -1){
+            } else if (elem.val().search(/^$/) !== -1) {
                 elem.removeClass("error").removeClass("ok");
                 statusInput[numberInStatus] = true;
             } else {
@@ -190,8 +190,8 @@ $(function () {
             })) {
                 return true;
             } else {
-                var  text =
-                openAlert("Номер существует", phone);
+                var text =
+                    openAlert("Номер существует", phone);
                 return false;
             }
         }
@@ -223,7 +223,7 @@ $(function () {
 
         buttonDelChecked.click(function () {
             var checkedList = $(".for-del :checked");
-            if(checkedList.length === 0){
+            if (checkedList.length === 0) {
                 $(".dialog").text("Нет выбранных номеров").dialog({
                     autoOpen: true,
                     modal: true,
@@ -236,7 +236,7 @@ $(function () {
                 });
                 return;
             }
-            var lastWord = checkedList.length < 5 ? " контакт(а)": " контактов";
+            var lastWord = checkedList.length < 5 ? " контакт(а)" : " контактов";
             var text = "Действительно удалить " + checkedList.length + lastWord;
             $.when(delDialog("Удалить контакты", text)).then(function (status) {
                 if (status === "Yes") {
@@ -257,7 +257,6 @@ $(function () {
                 modal: true,
                 title: title,
                 buttons: {
-
                     "Ok": function () {
                         // returned = true;
                         $(this).dialog("close");
