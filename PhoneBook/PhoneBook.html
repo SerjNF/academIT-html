@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhoneBook</title>
+    <link rel="stylesheet" href="css/PhoneBook.css">
+   <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.12.1/jquery-ui.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/PhoneBookAddData.js"></script>
+</head>
+<body>
+
+<div class="delete-dialog"></div>
+
+<div class="dialog" title="Нет выбранных контактов"></div>
+
+<div class="input-data">
+    <h1 id="head1">Телефонная книга</h1>
+    <div id="input-div">
+        <label>Введите данные:</label>
+        <form>
+            <label class="div-input">
+                <input class="input" type="text" id="soname" placeholder="Фамилия">
+                <span id="error-soname">Некорректная фамилия</span>
+            </label>
+            <label class="div-input">
+                <input class="input" type="text" id="name" placeholder="Имя">
+                <span id="error-name">Некорректное имя</span>
+            </label>
+            <label class="div-input">
+                <input class="input" type="tel" id="phone" name="tel" placeholder="Тел.: +7(8)ХХХХХХХХХХ">
+                <span id="error-phone">Некорректный номер</span>
+            </label>
+            <div id="btn-enter">
+                <button class="button" id="enter-data" type="button" disabled>Добавить</button>
+            </div>
+        </form>
+    </div>
+    <div class="filter">
+        <input class="filter-input" type="text" id="filter-input" placeholder="Фильтр">
+        <button class="button" id="reset-filter" type="button" >Сброс</button>
+    </div>
+</div>
+
+<div class="data" id="date">
+    <table id="table-date">
+        <thead>
+        <tr>
+            <th class="for-check"><label for="check-all"></label><input type="checkbox" class="check-box" id="check-all"></th>
+            <th class="col1">№</th>
+            <th class="col2">Фамилия</th>
+            <th class="col3">Имя</th>
+            <th class="col4">Телефон</th>
+            <th class="col5">Удаление данных</th>
+        </tr>
+        </thead>
+        <tbody id="body-table"></tbody>
+    </table>
+    <div id="div-del-checked">
+        <button class="button" id="del-checked" type="button">Удалить выбранные</button>
+    </div>
+</div>
+</body>
+</html>
