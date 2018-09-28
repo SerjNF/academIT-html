@@ -234,7 +234,6 @@ $(function () {
                         }
                     }
                 });
-                // $(".dialog").dialog("open");
                 return;
             }
             var lastWord = checkedList.length < 5 ? " контакт(а)": " контактов";
